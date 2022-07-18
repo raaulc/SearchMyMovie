@@ -4,31 +4,11 @@
 import SwiftUI
 
 // Movies' List.
-struct FilmListView: View {
+
+struct OldSearchesView: View {
     @EnvironmentObject private var viewModel: FilmListViewModel
     @State private var searchText: String = ""
     @Binding var tabSelection: Int
-
-    var searchTextField: some View {
-        HStack {
-            TextField(
-                "Search for a Movie",
-                text: $searchText,
-                onEditingChanged: { _ in },
-                onCommit: {
-                    viewModel.find(text: searchText)
-                }
-            )
-            .textFieldStyle(RoundedBorderTextFieldStyle())
-
-            Button {
-                resetView()
-            } label: {
-                Image(systemName: "xmark.circle")
-            }
-        }
-        .padding()
-    }
 
     var searchResultsList: some View {
         List {
@@ -46,13 +26,11 @@ struct FilmListView: View {
 
     var recentsList: some View {
         List {
-            Section(
-                header: Text("Old Searches")
-                    .font(.title3).textCase(nil)
-            ) {
                 ForEach(viewModel.recents, id: \.self) { recent in
                     Button(recent) {
                         viewModel.find(text: recent)
+                        resetView()
+                        self.tabSelection = 1
                     }
                     .buttonStyle(DefaultButtonStyle())
                 }
@@ -60,30 +38,19 @@ struct FilmListView: View {
                     viewModel.removeRecents(in: indexSet)
                 })
             }
-            .padding(.top)
-        }
         .listStyle(InsetGroupedListStyle())
     }
 
     var body: some View {
         NavigationView {
             VStack {
-                searchTextField
-
-                Spacer()
-
-                if viewModel.hasFilms {
-                    searchResultsList
+                if viewModel.hasRecents {
+                    recentsList
                 }
             }
-            .navigationTitle("Search My Movie")
-            .onAppear {
-                searchText.removeAll()
-            }
-
+            .navigationTitle("Old Searches")
         }
     }
-
 
     func resetView() {
         searchText.removeAll()

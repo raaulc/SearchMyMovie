@@ -4,7 +4,6 @@
 <!-- PROJECT SHIELDS -->
 
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -47,14 +46,10 @@ Here is the native iOS app - Search My Movie, that allows users to search for Mo
     <img src="https://img.shields.io/badge/iOS-14.0+-green.svg" />
     <img src="https://img.shields.io/badge/Swift-5.2-orange.svg" />
     <img src="https://img.shields.io/badge/SwiftUI-+-blue.svg" />
-    <a href="https://twitter.com/rahuldox">
-        <img src="https://img.shields.io/badge/Contact-@rahuldox-lightgrey.svg?style=flat" alt="Twitter: @pj_" />
-    </a>
 </p>
 
 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/raaulc
 

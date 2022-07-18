@@ -16,8 +16,8 @@ enum ServiceEndpoint {
             return buildURL(key: "s", value: text)
         case .detail(let id):
             return buildURL(key: "i", value: id)
+        }
     }
-
     // Builds a URL for the remote request type.
     
     // | Parameters:
@@ -54,3 +54,4 @@ enum ServiceEndpoint {
     // freely locally without the changes being tracked.
     private var apiKey: String { Constants.apiKey }
 }
+

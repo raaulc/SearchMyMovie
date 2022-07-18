@@ -20,11 +20,11 @@
   <p align="center">
     project_description
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/rahulmns/SearchMyMovie">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/rahulmns/SearchMyMovie/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="github.com/rahulmns/SearchMyMovie/issues">Request Feature</a>
   </p>
 </div>
 

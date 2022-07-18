@@ -18,7 +18,7 @@
 <h3 align="center">Search My Movie</h3>
 
   <p align="center">
-    project_description
+    Search Any Movie
     <br />
     <a href="https://github.com/rahulmns/SearchMyMovie">View Demo</a>
     ·

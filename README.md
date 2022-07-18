@@ -39,8 +39,6 @@ Here is the native iOS app - Search My Movie, that allows users to search for Mo
 * It will save searches on another tab so that the user can go back and see their previous searches and easily re-search.
 * It is working in landscape and portrait as well as tablet and phone.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 ### Built With
@@ -54,7 +52,6 @@ Here is the native iOS app - Search My Movie, that allows users to search for Mo
     </a>
 </p>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt

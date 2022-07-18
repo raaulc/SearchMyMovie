@@ -22,13 +22,13 @@ struct SearchMyMovieApp: App {
             TabView(selection: $tabSelection)  {
                 FilmListView(tabSelection: $tabSelection).environmentObject(filmListViewModel)
                     .tabItem {
-                        Label("Menu", systemImage: "list.dash")
+                        Label("Search", systemImage: "viewfinder.circle.fill")
                     }.tag(1)
 
 
                 OldSearchesView(tabSelection: $tabSelection).environmentObject(filmListViewModel)
                     .tabItem {
-                        Label("Order", systemImage: "square.and.pencil")
+                        Label("Old Searches", systemImage: "list.dash")
                     }.tag(2)
 
             }

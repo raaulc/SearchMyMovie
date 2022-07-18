@@ -54,7 +54,6 @@
 		9BC2C8F82884B3DB00D6762E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BC2C8FD2884B3DB00D6762E /* SearchMyMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchMyMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC2C9032884B3DB00D6762E /* SearchMyMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchMyMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BC2C9052884B3DB00D6762E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		9BC2C90A2884B3DB00D6762E /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC2C90E2884B3DC00D6762E /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		9BC2C9102884B3DC00D6762E /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
@@ -123,7 +122,6 @@
 				9BC2C95B2884BD5400D6762E /* Network */,
 				9BC2C9562884BD3500D6762E /* Extension */,
 				9BC2C8F52884B3D900D6762E /* Shared */,
-				9BC2C9042884B3DB00D6762E /* macOS */,
 				9BC2C90D2884B3DC00D6762E /* Tests iOS */,
 				9BC2C9192884B3DC00D6762E /* Tests macOS */,
 				9BC2C8FE2884B3DB00D6762E /* Products */,
@@ -147,14 +145,6 @@
 				9BC2C9162884B3DC00D6762E /* Tests macOS.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9BC2C9042884B3DB00D6762E /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				9BC2C9052884B3DB00D6762E /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		9BC2C90D2884B3DC00D6762E /* Tests iOS */ = {

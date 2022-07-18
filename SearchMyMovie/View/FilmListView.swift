@@ -44,27 +44,6 @@ struct FilmListView: View {
         .listStyle(PlainListStyle())
     }
 
-    var recentsList: some View {
-        List {
-            Section(
-                header: Text("Old Searches")
-                    .font(.title3).textCase(nil)
-            ) {
-                ForEach(viewModel.recents, id: \.self) { recent in
-                    Button(recent) {
-                        viewModel.find(text: recent)
-                    }
-                    .buttonStyle(DefaultButtonStyle())
-                }
-                .onDelete(perform: { indexSet in
-                    viewModel.removeRecents(in: indexSet)
-                })
-            }
-            .padding(.top)
-        }
-        .listStyle(InsetGroupedListStyle())
-    }
-
     var body: some View {
         NavigationView {
             VStack {
